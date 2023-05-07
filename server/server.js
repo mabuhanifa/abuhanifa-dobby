@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
-const connectDB = require("./utlis/db");
+const connectDB = require("./utils/db");
 connectDB();
 
 app.get("/", (req, res) => {
